@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div style="margin: 0 auto">
+<h1>Photo Library</h1>
+<p>기본 라인처리 colorgreen</p>
+<img src="./images/p01.jpg" style="border:1px solid green"> 
+<h1>Life on the water</h1>
+<p>이미지 클릭시 라인처리</p>
+
+</div>
+</body>
+</html>

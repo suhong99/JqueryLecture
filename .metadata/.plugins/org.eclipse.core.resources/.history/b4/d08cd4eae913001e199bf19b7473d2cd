@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+
+<h1>동적 테이블</h1>
+<table border="1">
+<col width="50"/><col width="150"/><col width="250"/><col width="150"/>
+<thead>
+	<tr>
+		<th>번호</th><th>이름</th><th>생년월일</th><th>Action</th>
+	</tr>	
+</thead>
+<tbody id="addPlace">
+	<tr class="targetTr">
+		<th>1</th><td>홍길동</td><td>2001/03/13</td><td class="delete" style=" color: blue;
+    text-decoration: underline;">삭제</td>
+	</tr>	
+</tbody>
+</table>
+
+<h2><b>추가 입력</b></h2>
+<table>
+<col width="150"/><col width="150"/><col width="250"/><col width="150"/>
+	<tr>
+		<th>번호</th><th>이름</th><th>생년월일</th><th>Action</th>
+	</tr>
+	<tr>
+		<td><input type="number" id="numIn"/></td ><td ><input type="text"/ id="nameIn"></td><td ><input type="text" id="birthIn"></td><td><button id="add">데이터 추가</button></td>
+	</tr>
+</table>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#add").click(function(){
+		let number = $("#numIn").val();
+		let name = $("#nameIn").val();
+		let birth = $("#birthIn").val();
+		// 미입력시 전처리
+		if(number.trim()==""){
+			alert("번호가 미입력되었습니다...");
+			return;
+		};
+		if(name.trim()==""){
+			alert("이름이 미입력되었습니다...");
+			return;
+		};
+		if(birth.trim()==""){
+			alert("생년월일이 미입력되었습니다...");
+			return;
+		};
+		
+		let newtb="<tr>";
+		newtb+= "<th>"+number+"</th>" +"<td>"+name+"</td>" +"<td class='delete' style=' color: blue;text-decoration: underline;'>"+birth+"</td>"
+		newtb+= "<td>삭제</td>";
+		newtb += "</tr>";
+		
+ 		$("#addPlace").append(newtb);
+ 
+	});
+	
+});
+</script>
+</body>
+</html>

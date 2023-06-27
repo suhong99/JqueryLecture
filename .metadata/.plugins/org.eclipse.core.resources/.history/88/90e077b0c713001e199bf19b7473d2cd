@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+<p id="demo">demo</p>
+<button type="button" id="btn">button</button>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+})
+
+$(function(){
+/* 	$("button").click(function(){
+		alert("button click")
+	}); */
+	// $("button").click(btnClick);
+	
+	$("#btn").click(function(){
+		alert("btn click");
+	})
+	
+	$("#demo").click(function(){
+	alert("demo click");
+	})
+	
+	$("button").on("click", function(){
+		alert("btn on click");
+	});
+})
+
+function btnClick(){
+	alert("버튼 클릭!");
+}
+</script>
+</body>
+</html>

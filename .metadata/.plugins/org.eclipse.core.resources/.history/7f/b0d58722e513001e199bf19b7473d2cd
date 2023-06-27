@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+<h1>image insert/remove</h1>
+<p>기본적으로 9가지의 이미지가 추가되어 있습니다. mouse로 이미지를 클릭하면, 이미지를 삭제할 수 있습니다. </p>
+<div>
+<img src="photo1" class="targetImg">
+<img src="photo2" class="targetImg">
+<img src="photo3" class="targetImg">
+<img src="photo4" class="targetImg">
+<img src="photo5" class="targetImg">
+<img src="photo6" class="targetImg">
+<img src="photo7" class="targetImg">
+<img src="photo8" class="targetImg">
+<img src="photo9" class="targetImg">
+
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".clickImg").click(function(){
+		$(this).css("border","4px solid red");
+	});
+	
+	$("#bigPic2").hover(function(){
+	    let currentSrc = $(this).attr("src");
+	    let newSrc = "";
+
+	    if (currentSrc === "./images/b_pic1.jpg") {
+	        newSrc = "./images/b_pic2.jpg";
+	    } else if (currentSrc === "./images/b_pic2.jpg") {
+	        newSrc = "./images/b_pic1.jpg";
+	    }
+	    $(this).attr("src", newSrc);
+	});
+	
+  
+
+	
+});
+</script>
+</body>
+</html>

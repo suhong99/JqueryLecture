@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+<table border="1">
+<col width="50"><col width="200"><col width="150">
+<tr> 
+	<th>번호</th><th>이름</th><th>나이</th>
+</tr>
+<tr class="hover">
+	<th>1</th><th>홍길동</th><th>24</th>
+</tr>
+<tr class="hover">
+	<th>2</th><th>성춘향</th><th>16</th>
+</tr>
+<tr class="hover">
+	<th>3</th><th>일지매</th><th>22</th>
+</tr>
+</table>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("tr.hover").mouseover(function(){
+		$(this).css("background","#00ff00")
+	});
+	
+$("tr.hover").mouseout(function(){
+	$(this).css("background","#ffffff")
+
+	});
+})
+</script>
+</body>
+</html>

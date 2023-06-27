@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div style="margin: 0 auto">
+<h1>Photo Library</h1>
+<p>기본 라인처리 colorgreen</p>
+<img src="./img/p01.jpg"> 
+</div>
+</body>
+</html>

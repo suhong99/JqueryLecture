@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+<h1>사진들</h1>
+<img src="./images/img01.jpg" class="pictures" > 
+<img src="./images/img02.jpg" class="pictures" > 
+<img src="./images/img03.jpg" class="pictures" > 
+<img src="./images/img04.jpg" class="pictures" > 
+<ol>
+	<li>성 자비에르 성당(외관)</li>
+	<li>성 자비에르 성당(내관)</li>
+	<li>낡은 건물</li>
+	<li>가로등</li>
+	
+</ol>
+<script type="text/javascript">
+$(document).ready(function(){
+	  $(".pictures").click(function(){
+	        let src = $(this).attr("src");
+	        let index = parseInt(src.substring(src.length - 6, src.length - 4));
+	       //  console.log(index)
+	        alert( $("ol li:nth-child(" + index + ")").text());
+	    });	
+});
+</script>
+</body>
+</html>

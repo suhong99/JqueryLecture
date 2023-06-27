@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+<p>소나무와 푸른 바다가 넘실대는 서해 대청도입니다. </p>
+<p>소나무와 푸른 바다가 넘실대는 서해 대청도입니다. </p>
+<p id="demo">많은 철새가 대청도를 거쳐 남북을 오고 갑니다. </p>
+<p class ="cls">서울대 연구진은 지난해 4월 이곳을 찾은 철새인 촉새에 달라붙은 외래종 생물을 발견했습니다.</p>
+<h3 class='cls'>4쌍의 다리를 가진 절지동물로, 중국 남부에 서식하는 매부리엉에피참진드기입니다.</h3>
+
+</body>
+</html>

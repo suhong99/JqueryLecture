@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\jquery\.metadata\.plugins\org.eclipse.jdt.core
+2176711708.index
+414494118.index
+1865797976.index
+971763640.index
+943563678.index

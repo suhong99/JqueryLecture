@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+
+<textarea rows="3" cols="30">일반적으로 독감은 늦가을에서 초봄 사이에 유행하곤 합니다.
+
+더위가 기승을 부리면 주춤하다 기온이 떨어지면서 감염이 늘어나는 겁니다.
+
+하지만 지난해와 올해는 유행 시기가 예년과 달랐습니다.
+
+2022년 10월까지도 1,000명당 10명 미만이었던 의심환자 수는 11월 초부터 증가하기 시작해 22년 말에는 60.7명에 달했습니다.
+
+이어 올해 4월과 5월까지 계속 유행하다 평소라면 유행이 끝나는 6월에야 감소세로 돌아섰습니다.</textarea>
+<br><br>
+<button type="button" id="answer">답글입력</button>
+<br>
+<div id="answerForm">
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#answer").click(function(){
+		let input= "<br>답글: <input type='text' id='answerText'>";
+		$("#answerForm").append(input);
+		
+		let answerBtn="<br><button type='button' id='answerBtn'>작성완료<button>"
+		$("#answerForm").append(answerBtn)
+		
+	})
+	
+	  $("#answerBtn").click(function(){
+		  console.log("되나")
+	        let text = $("#answerText").val();
+	        alert(text);
+	    });
+	
+});
+</script>
+</div> 
+
+
+</body>
+</html>

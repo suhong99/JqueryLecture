@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+ 입력 : <input type = "text" id="txt">
+ <br>
+ <input type="button" id="btn" value="입력">
+</body>
+</html>

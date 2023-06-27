@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"> </script> -->  
+ 
+   <script src="./jquery.min.js"></script>
+  
+</head>
+<body>
+<!--  
+		Jquery : Java script 경량화, 간략화
+					Ajax (비동기 통신) == xhttp
+		
+		Jquery-UI
+		document.getElementById(아이디)
+		
+		DOM(Document Object Model) - Javascript
+		document.getElementById(아이디).innerHTML.value
+		
+		$(tag 또는 id 또는 class 또는 name).핸들러함수(매개변수)
+										.load()
+		
+		
+-->
+
+<p>소나무와 푸른 바다가 넘실대는 서해 대청도입니다. </p>
+<p id="demo">많은 철새가 대청도를 거쳐 남북을 오고 갑니다. </p>
+<p class ="cls">서울대 연구진은 지난해 4월 이곳을 찾은 철새인 촉새에 달라붙은 외래종 생물을 발견했습니다.</p>
+<h3 class='cls'>4쌍의 다리를 가진 절지동물로, 중국 남부에 서식하는 매부리엉에피참진드기입니다.</h3>
+
+<script type="text/javascript">
+/* 	let arrPtag= document.getElementsByTagName("p");
+	for(i=0;i<arrPtag.length;i++){
+		arrPtag[i].innerHTML = "새로운 문자열";
+	}
+ */
+ $("p").html("새로운 문자열");
+ $(document).ready(function(){
+	 
+ });
+</script>
+</body>
+</html>

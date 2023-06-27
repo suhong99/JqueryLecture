@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+<table border="1">
+<col width="50"><col width="200"><col width="150">
+<tr> 
+	<th>번호</th><th>이름</th><th>나이</th>
+</tr>
+<tr class="hover">
+	<td>1</td><td>홍길동</td><td>24</td>
+</tr>
+<tr class="hover">
+	<td>2</td><td>성춘향</td><td>16</td>
+</tr>
+<tr class="hover">
+	<td>3</td><td>일지매</td><td>22</td>
+</tr>
+</table>
+<br>
+
+<p>p tag 입니다.</p>
+<button type="button">버튼</button>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("tr.hover").mouseover(function(){
+		$(this).css("background","#00ff00")
+		
+	});
+	
+	$("tr.hover").mouseout(function(){
+		$(this).css("background","#ffffff")
+	
+		});
+		
+	$("td").click(function(){
+		alert($(this).text());
+	});
+	$("button").click(function(){
+		//jquery로 속성 추가
+		$("p").attr("id","demo");
+		$("p").attr("class","cls");
+	});
+})
+</script>
+</body>
+</html>

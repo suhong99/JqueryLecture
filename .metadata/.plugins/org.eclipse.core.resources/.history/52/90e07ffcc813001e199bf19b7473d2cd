@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+ 입력 : <input type = "text" id="txt">
+<!--  <input type="button" id="btn" value="입력" onclick="btnclick()"> -->
+<input type="button" id="btn" value="입력">
+<script type="text/javascript">
+	function btnclick(){
+		let txt = document.getElementById('txt').value;
+		console.log(txt);
+	}
+	$("#btn").click(function(){
+		let txt =$("#txt").valu();
+		console.log(txt);
+	})
+</script> 
+</body>
+</html>

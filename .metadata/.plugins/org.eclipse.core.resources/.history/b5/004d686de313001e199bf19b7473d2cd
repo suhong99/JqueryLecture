@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+<div style="margin: 0 auto">
+<h1>Photo Library</h1>
+<p>기본 라인처리 colorgreen</p>
+<img src="./images/p01.jpg" style="border:4px solid green"> 
+<h1>Life on the water</h1>
+<p>이미지 클릭시 라인처리 color red</p>
+<img src="./images/photo1.jpg" class="clickImg" > 
+<img src="./images/photo2.jpg" class="clickImg" > 
+
+<h1>Room Image</h1>
+<p>마우스 커서가 이미지 위로 이동하면, 이미지 변경</p>
+	<img src="./images/b_pic2.jpg" id="bigPic2" > 
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".clickImg").click(function(){
+		$(this).css("border","4px solid red");
+	});
+	
+	$("#bigPic2").hover(function(){
+	    let currentSrc = $(this).attr("src");
+	    let newSrc = "";
+
+	    if (currentSrc === "./images/b_pic1.jpg") {
+	        newSrc = "./images/b_pic2.jpg";
+	    } else if (currentSrc === "./images/b_pic2.jpg") {
+	        newSrc = "./images/b_pic1.jpg";
+	    }
+
+	    $(this).attr("src", newSrc);
+	});
+	
+  
+
+	
+});
+</script>
+</body>
+</html>
